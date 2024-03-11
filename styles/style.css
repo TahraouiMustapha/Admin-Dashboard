@@ -1,0 +1,44 @@
+
+
+* {
+    margin:0;
+}
+
+.sidebar {
+    background-color: lightskyblue;
+    color: white;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 40px;
+    padding-left: 20px;
+    padding-top: 8px;
+}
+
+.sidebar-item { 
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    grid-gap: 16px;
+    align-items: center;
+}
+
+.sidebar-item > :nth-child(1) {
+    justify-self: center;
+}
+
+.sidebar-item > :nth-child(2) {
+    justify-self: start;
+}
+
+.home-nav, .setting-nav {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-gap: 14px;
+}
+
+.sidebar-item.branding .icon{
+    font-size: 32px;
+}
+
+.sidebar-item.branding {
+    font-size: 24px;
+}
