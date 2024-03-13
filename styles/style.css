@@ -145,3 +145,59 @@ button {
     background-color: blue;
     color: white;
 }
+
+.main-content {
+    padding: 1.8rem;
+}
+
+.main-content .title {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.projects-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 416px));
+    grid-template-rows: repeat(auto-fit, 200px);
+    gap:1.4rem;
+}
+
+.card {
+    padding: 32px;
+    background-color: lightgray;
+    display: grid;
+    row-gap: 2rem;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card > :nth-child(2) {
+    justify-self: end;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 1em;
+    font-size: 1.5em;
+}
+
+.card > p {
+    font-size: 0.8em;
+    line-height: 1.2;
+    width:70%;
+}
+
+.card .card-title {
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+.card::before {
+    content:'';
+    background-color: black;
+    width: 12px;
+    height: 100%;
+    position: absolute;
+}
+
